@@ -6,9 +6,32 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     margin: 1em;
     user-select: none;
+    color:rgb(174, 136, 218);
+    background: rgb(247, 166, 170); 
    }
 
    .activeCard {
-       color: red;
-       background: pink;
+       color: pink;
+       background: black;
    }
+
+   body {
+    background-color: #f8ebb2;
+  }
+
+  footer {
+    background-color: #403574;
+    
+  }
+
+  b1 {
+    color:rgb(233, 151, 183);
+  }
+
+  b2 {
+    color:rgb(73, 68, 117);
+  }
+
+  
+
+  
