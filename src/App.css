@@ -7,11 +7,11 @@
     margin: 1em;
     user-select: none;
     color:rgb(174, 136, 218);
-    background: rgb(247, 166, 170); 
+    background: rgb(250, 193, 196); 
    }
 
    .activeCard {
-       color: pink;
+       color: rgb(253, 170, 183);
        background: black;
    }
 
@@ -25,8 +25,9 @@
   }
 
   .container {
-    border-radius: 5px;
-    background-color: #d1f8e2;
+    margin: 20px;
+    /*border-radius: 5px;*/
+    background-color: #d5fdf3;
     padding: 20px;
 }
 
