@@ -7,6 +7,7 @@ const word2 = "8311";
 const word3 = "8217";
 const word4 = "8528";
 
+
 function App() {
 
   var x = Math.floor(Math.random() * 4);
@@ -38,6 +39,7 @@ if(x == 0) {
       <br></br><b2>𝐻𝑖𝑛𝑡: 𝑆𝑜𝑢𝑡ℎ 𝐾𝑜𝑟𝑒𝑎𝑛 𝐺𝑖𝑟𝑙 𝐺𝑟𝑜𝑢𝑝 👭🏼👭🏼</b2>
       <br></br>
       <WordCard value={word1}/>
+      <b2>𝑁𝑒𝑥𝑡/𝑆𝑘𝑖𝑝 ☞︎ <a href="http://localhost:3000/">Click</a></b2>
     </container>
     </div>
     
@@ -74,6 +76,7 @@ if(x == 0) {
               <br></br><b2>1. __ x __ + __ - __ = 24</b2>
               <br></br>
               <WordCard value={word2}/>
+              <b2>𝑁𝑒𝑥𝑡/𝑆𝑘𝑖𝑝 ☞︎ <a href="http://localhost:3000/">Click</a></b2>
           </container>
           </div>
           
@@ -110,6 +113,7 @@ if(x == 0) {
               <br></br><b2>2. ( __ x __ ) + __ + __ = 24</b2>
               <br></br>
               <WordCard value={word3}/>
+              <b2>𝑁𝑒𝑥𝑡/𝑆𝑘𝑖𝑝 ☞︎ <a href="http://localhost:3000/">Click</a></b2>
           </container>
           </div>
           
@@ -146,6 +150,7 @@ if(x == 0) {
               <br></br><b2>3. ( __ x __ ) - ( __ x __ ) = 24</b2>
               <br></br>
               <WordCard value={word4}/>
+              <b2>𝑁𝑒𝑥𝑡/𝑆𝑘𝑖𝑝 ☞︎ <a href="http://localhost:3000/">Click</a></b2>
           </container>
           </div>
           
