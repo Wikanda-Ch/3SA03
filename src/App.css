@@ -24,6 +24,12 @@
     
   }
 
+  .container {
+    border-radius: 5px;
+    background-color: #f1d7fc;
+    padding: 20px;
+}
+
   b1 {
     color:rgb(233, 151, 183);
   }
