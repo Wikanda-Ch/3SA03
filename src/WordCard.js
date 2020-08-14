@@ -3,6 +3,8 @@ import _, { attempt } from 'lodash';
 
 import CharacterCard from './CharacterCard';
 
+var answer;
+
 const prepareStateFromWord = (given_word) => {
     let word = given_word.toUpperCase()
     let chars = _.shuffle(Array.from(word))
@@ -18,6 +20,7 @@ const prepareStateFromWord = (given_word) => {
 export default function WordCard(props){
 
     const [state, setState] = useState(prepareStateFromWord(props.value))
+    answer = state.guess;
 
     const activationHandler = c => {
         console.log(`${c} has been activated`)
@@ -41,8 +44,8 @@ export default function WordCard(props){
            
 
     return (
-        <div>
-           {
+        <div> <br></br><b2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Your Answer : {answer} </b2><br></br>
+           { 
                 state.chars.map((c, i) => 
                     <CharacterCard value={c} key={i} activationHandler={activationHandler} attempt={state.attempt}/>
                     )
