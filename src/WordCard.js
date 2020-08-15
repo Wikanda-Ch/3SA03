@@ -44,7 +44,7 @@ export default function WordCard(props){
            
 
     return (
-        <div> <br></br><b2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Your Answer : {answer} </b2><br></br>
+        <div> <br></br><b2><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 𝑌𝑜𝑢𝑟 𝐴𝑛𝑠𝑤𝑒𝑟 : {answer} </b></b2><br></br>
            { 
                 state.chars.map((c, i) => 
                     <CharacterCard value={c} key={i} activationHandler={activationHandler} attempt={state.attempt}/>
@@ -53,4 +53,7 @@ export default function WordCard(props){
         </div>
     );
 }
+
+
+
 

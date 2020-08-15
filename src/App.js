@@ -44,35 +44,40 @@ function App() {
     </center>
 
     <center>
-    <b2>
+    <b2><b>
       <br></br>❗𝐶𝑙𝑖𝑐𝑘 𝑡ℎ𝑒 𝑏𝑜𝑡𝑡𝑜𝑛 𝑡𝑜 𝑝𝑙𝑎𝑦 𝑡ℎ𝑒 𝑔𝑎𝑚𝑒. 
       <br></br>⭕️𝐼𝑓 𝑦𝑜𝑢 𝑠𝑤𝑎𝑝 𝑡𝑟𝑢𝑒,𝑦𝑜𝑢 𝑤𝑖𝑛.
       <br></br>❌𝐼𝑓 𝑦𝑜𝑢 𝑠𝑤𝑎𝑝 𝑤𝑟𝑜𝑛𝑔,𝑦𝑜𝑢 𝑙𝑜𝑠𝑒 𝑎𝑛𝑑 𝑡ℎ𝑒 𝑔𝑎𝑚𝑒 𝑤𝑖𝑙𝑙 𝑟𝑒𝑠𝑒𝑡.
-    </b2>
+    </b></b2>
       <br></br><br></br>
     </center>
 
     <div id="Question" class="container ">
     <container>
-
-      <br></br><b2>𝐹𝑖𝑛𝑑 𝑅𝑒𝑠𝑢𝑙𝑡{quest}</b2>
+    
+    <b><br></br><b2>𝐹𝑖𝑛𝑑 𝑅𝑒𝑠𝑢𝑙𝑡{quest}</b2></b>
       
       <br></br>
       <WordCard value={word}/>
-      <b2>𝑁𝑒𝑥𝑡/𝑆𝑘𝑖𝑝 ☞︎ <a href="http://localhost:3000/">Click</a></b2>
+      <br></br>
+      <b><b2>&nbsp;&nbsp;𝑁𝑒𝑥𝑡/𝑆𝑘𝑖𝑝 ☞︎ <a href="http://localhost:3000/">𝐶𝑙𝑖𝑐𝑘</a></b2></b>
+      <br></br><br></br>
+
+      <button onClick={() => displayAnswer(word)}>𝐶𝑙𝑖𝑐𝑘 𝑡𝑜 𝑠𝑒𝑒 𝑎𝑛𝑠𝑤𝑒𝑟</button> 
+      <div id="Ans"></div>
+
     </container>
     </div>
     
     </div>
     </body>   
   );
-  //}
-
-      
-      
-
-
-
+  
+  function displayAnswer(word){
+    document.getElementById("Ans").innerText = "𝐴𝑛𝑠𝑤𝑒𝑟 : "+ word;
+  }
+    
+    
 
 }
 
